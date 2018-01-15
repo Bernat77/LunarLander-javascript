@@ -1,0 +1,296 @@
+body, html {
+     height: 100%;
+     padding: 0px;
+     margin: 0px;
+}
+ body {
+     background-image: url("../img/fondoLunarLander.jpg");
+     background-repeat: repeat;
+     background-attachment: fixed;
+     background-position: center;
+     background-size:40%;
+     color: white;
+}
+ .button {
+     position: fixed;
+     right: 5%;
+     top: 15px;
+     z-index:4;
+}
+ #bmenu {
+     height: 50px;
+     border: 4px solid darkorchid;
+     border-radius: 100%;
+}
+ #brest1:hover{
+     cursor:pointer;
+}
+ #brest1{
+     height:50px;
+     border: 4px solid darkorchid;
+     border-radius: 100%;
+}
+ .bplay {
+     display: none;
+}
+ .menu{
+     display:none;
+}
+ .menu2 {
+     text-align:center;
+     display:none;
+     z-index: 5;
+     position: fixed;
+     top: 25%;
+     left: 0%;
+     width:95%;
+     font-size: 30px;
+     background-color: red;
+     border: 12px solid darkred;
+}
+ .menu2 li {
+     text-align: center;
+     background-color: darkred;
+     margin: 10px;
+     padding: 10px;
+}
+ .menu2 ul {
+     list-style-type: none;
+     padding: 2px;
+}
+ .menu2 a {
+     text-decoration: none;
+     color: white;
+}
+ #Dif{
+    display:none;
+}
+ #Dif3{
+    border: solid white 2px;
+     border-radius:10px;
+}
+ #Dif3:hover{
+    cursor:pointer;
+}
+ .luna {
+     position: fixed;
+     bottom: -2%;
+     height: 30%;
+     width:100%;
+     max-height: 400px;
+     min-height: 100px;
+     z-index: -1;
+}
+ .luna img {
+     position: relative;
+     width: 100%;
+     height: 100%;
+}
+ .ind {
+     position: fixed;
+     color: yellow;
+     width:400px;
+     font-size: 20px;
+     z-index: 1;
+}
+ #alt {
+     position: absolute;
+     left: 5px;
+     top: 10px;
+}
+ #vel {
+     position: absolute;
+     left: 13px;
+     top: 160px;
+}
+ #vnum {
+     position: absolute;
+     left: 10px;
+     top: 195px;
+     background-color: darkred;
+     padding: 4px;
+}
+ #fuel {
+     position: absolute;
+     left: 20px;
+     top: 240px;
+}
+ .fondo-ind-top {
+     position: fixed;
+     height: 100px;
+     width: 50px;
+     background-color: red;
+     top: 70px;
+     left: 15px;
+}
+ .fondo-ind-top-bar{
+     display:none;
+}
+ #fondo-ind-top-bar2 {
+     position: absolute;
+     width: 50px;
+     height: 10px;
+     background-color: white;
+     top: 20%;
+}
+ .fondo-ind-bot {
+     position: fixed;
+     height: 100px;
+     width: 50px;
+     background-color: yellow;
+     top: 300px;
+     left: 15px;
+}
+ #fondo-ind-bot-fil{
+     display:none;
+}
+ #fondo-ind-bot-fil2 {
+     position: absolute;
+     height: 0px;
+     width: 50px;
+     background-color: red;
+}
+ .fondo-menu p {
+     display: none;
+}
+ .texto {
+     position: relative;
+     top: 100px;
+     text-align: center;
+     font-size: 14px;
+     padding: 20px;
+}
+ .bbmenu {
+     position: fixed;
+     right: 5%;
+     top: 20px;
+     z-index:4;
+}
+ .bbmenu img {
+     height: 50px;
+     border: 4px solid darkorchid;
+     border-radius: 100%;
+}
+ #nave{
+    text-align:center;
+    position:fixed;
+    top:10%;
+    width:100%;
+    height:20%
+}
+ #nave img{
+    height:100%;
+}
+ .bot{
+    display:none;
+}
+ .bot2:active{
+    position:fixed;
+    height:120px;
+    width:120px;
+    background-color:darkred;
+    bottom:18%;
+    right:4.5%;
+    font-size:34px;
+}
+ .bot2:hover{
+    cursor:pointer;
+}
+ .bot2 p{
+    position:relative;
+    top:0
+}
+ .bot2{
+    -webkit-user-select: none;
+     -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition-duration: 0.4s;
+    font-size:30px;
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    border: 5px solid darkred;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color:red;
+    bottom:20%;
+    right:5%;
+    text-align:center;
+    color:white;
+    z-index:4
+}
+ .gameov{
+    text-align:center;
+    position:fixed;
+    background-color:rgba(0,0,0,0.8);
+    width:80%;
+    height:60%;
+    top:20%;
+    z-index:30;
+    left:10%;
+    border:solid white;
+    border-radius:20px;
+    display: none
+}
+ .gameov button{
+    cursor:pointer;
+    transition-duration: 0.4s;
+    position:relative;
+    bottom:-30%;
+    font-size:24px;
+    border-radius:20%
+}
+ .gameov button:hover{
+    color:darkblue;
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+ #win p{
+    font-size:20px;
+    position:relative;
+    text-align:center
+}
+ #lose p{
+    font-size:20px;
+    position:relative;
+    text-align:center
+}
+ #nave{
+    text-align:center;
+    position:fixed;
+    top:10%;
+    width:100%;
+    height:20%
+}
+ #nave img{
+    height:100%;
+}
+ #hidem,#showm,#cpanel{
+     display:none;
+}
+ .b,.d{
+     display: none;
+}
+ #bmenu:hover{	cursor: pointer;
+
+}
+#botonrojo{
+     font-size:22px;
+     position: relative;
+     left: 40%;
+     height: 70px;
+     width: 70px;
+     border: 5px solid darkred;
+     box-sizing: border-box;
+     border-radius: 50%;
+     background-color:red;
+     text-align:center;
+     color:white;
+     z-index:4 
+}
+
+ #botonrojo p{
+     position:relative;
+     top:-6%;
+}
+

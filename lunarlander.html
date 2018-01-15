@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lunar Lander</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Juego de Navegador: Lunar Lander">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' media='screen and (min-width: 901px)' href='css/1.css'>
+    <link rel='stylesheet' media='screen and (max-width: 900px)' href='css/2.css'>
+    <script src="js/js.js"></script>
+</head>
+
+<body>
+    <div class="gameov">
+        <div id="win">
+            <p>¡Enhorabuena!<br><br> Como dijo Abraham Lincon en 2007:<br>"Un pequeño paso para el Lunar pero uno enorme para el Lander."</p>
+        </div>
+        <div id="lose">
+            <p>Game Over.<br><br> ¡Vuelve a intentarlo!
+            </p>
+        </div>
+        <button id="reint">¿Reintentar?</button>
+    </div>
+    <div class=button>
+        <div class="bplay">
+            <img id="bpause" src="img/bPause.png" alt="play">
+        </div>
+        <div class="brest">
+            <img id="brest1" src="img/bRestart.png" alt="restart">
+        </div>
+        <div class="bmenu1">
+            <img id="bmenu" src="img/bMenu.png" alt="menu">
+        </div>
+    </div>
+    <div class="menu2">
+        <ul>
+            <li>
+                <div id=Ab2><a href="about.html">About</a></div>
+            </li>
+            <li>
+                <div id=Dif2>Dificultad</div>
+                <div id=Dif3>Fácil</div>
+            </li>
+            <li>
+                <div id=Ins2><a href="instrucciones.html">Instrucciones</a></div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li>
+                <div id=Ab><a href="about.html">About</a></div>
+            </li>
+            <li>
+                <div id=Dif>Dificultad</div>
+            </li>
+            <li>
+                <div id=Ins><a href="instrucciones.html">Instrucciones</a></div>
+            </li>
+        </ul>
+    </div>
+    <div class="fondo-menu">
+    </div>
+    <div class="ind">
+        <p id=alt>Altitude</p>
+        <p id=vel>Speed</p>
+        <p id=vnum><span id=velocidad>0</span> m/s</p>
+        <p id=fuel>Fuel</p>
+    </div>
+    <div class="fondo-ind">
+        <div class="fondo-ind-top">
+            <div id="fondo-ind-top-bar"></div>
+            <div id="fondo-ind-top-bar2"></div>
+        </div>
+        <div class="fondo-ind-mid"></div>
+        <div class="fondo-ind-bot">
+            <div id="fondo-ind-bot-fil"></div>
+            <div id="fondo-ind-bot-fil2"></div>
+        </div>
+    </div>
+    <div class="luna">
+        <img src="img/moon.png" alt="luna">
+    </div>
+    <div id="nave">
+        <img id="nau" src="img/landerOff.png" alt="img nave">
+    </div>
+    <div class="a">
+        <div id="showm">show menu</div>
+        <ul id="cpanel">
+            <li>Altura <span id="altura">70</span> m </li>
+        </ul>
+    </div>
+    <div class="b">b</div>
+    <div class="c">
+        <div id="hidem">hide menu</div>
+    </div>
+    <div class="d">d</div>
+    <div class="bot">
+        <p>GAS!</p>
+    </div>
+    <div class="bot2">
+        <p id="bot2p">OFF</p>
+    </div>
+</body>
+
+</html>
