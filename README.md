@@ -29,4 +29,5 @@ En la versión de móvil se han hecho las siguientes modificaciones:
 **Apartado visual**
 
 En el apartado visual se ha sido muy fiel al concepto original y se han implementado las ideas que se planteaban en el proyecto "LunarLander CSS.
+
 ----
