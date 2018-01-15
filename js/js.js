@@ -378,7 +378,7 @@ function actualizarFuel() {
             motorOff();
         }
         document.getElementById("fondo-ind-bot-fil").style.height = gasfil + "%";
-        if (bot2 = true) {
+        if (bot2 == true) {
             document.getElementById("fondo-ind-bot-fil2").style.height = (100 - gasfil) + "%";
         }
     }
