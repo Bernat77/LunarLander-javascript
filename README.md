@@ -1,3 +1,6 @@
+Link rawgit: https://rawgit.com/Bernat77/LunarLander-javascript/master/lunarlander.html
+
+
 # Lunar Lander: Documentación
 
 ## Explicación y modificaciones
