@@ -22,6 +22,7 @@ var barleft = 31;
 var gasfil = 100;
 //variables dificultad
 var dificultad = 1;
+var nave = 1;
 var umbral = 5;
 var fuel = 100;
 var dif = "Fácil";
@@ -34,6 +35,7 @@ window.onload = function() {
     velocidad = document.getElementById("velocidad");
     altura = document.getElementById("altura");
     combustible = document.getElementById("fuel");
+	document.getElementById("nau").src="img/"+nave+"Off.png";
 
 
     //definición de eventos
@@ -50,6 +52,24 @@ window.onload = function() {
             }
         }
     }
+	
+	document.getElementById("SelNave").onclick = function(){
+		if (gameover==false){
+			switch(nave){
+				case 1:
+					nave = 2;
+					document.getElementById("nau").src = "img/"+nave+"Off.png";
+					restart();
+					break;
+				case 2:
+					document.getElementById("nau").src = "img/"+nave+"On.png";
+					nave = 1;
+					restart();
+					break;
+					
+			}
+		}
+	}
 
     document.getElementById("Dif").onclick = function() {
         if (gameover == false) {
@@ -213,17 +233,18 @@ window.onload = function() {
         document.getElementsByClassName("c")[0].style.display = "none";
         start();
     }
+	
     //encender/apagar el motor al hacer click en el botón
     document.getElementsByClassName("bot")[0].onmousedown = function() {
         if (pause == false && gameover == false) {
             if (a == g && c >= 0) {
                 motorOn();
-                document.getElementById("nau").src = "img/landerOn.png";
+                document.getElementById("nau").src = "img/"+nave+"On.png";
             }
         }
         document.onmouseup = function() {
             if (gameover == false) {
-                document.getElementById("nau").src = "img/landerOff.png";
+                document.getElementById("nau").src = "img/"+nave+"Off.png";
             }
             motorOff();
         }
@@ -238,14 +259,14 @@ window.onload = function() {
                 document.getElementById("bot2p").innerHTML = "ON";
                 if (a == g && c >= 0) {
                     motorOn();
-                    document.getElementById("nau").src = "img/landerOn.png";
+                    document.getElementById("nau").src = "img/"+nave+"On.png";
                 }
             }
         } else {
             if (gameover == false) {
                 bot2 = false;
                 document.getElementById("bot2p").innerHTML = "OFF";
-                document.getElementById("nau").src = "img/landerOff.png";
+                document.getElementById("nau").src = "img/"+nave+"Off.png";
             }
             motorOff();
         }
@@ -288,7 +309,7 @@ function restart() {
 
     document.getElementById("bot2p").innerHTML = "OFF";
     document.getElementById("bpause").src = "img/bPause.png";
-    document.getElementById("nau").src = "img/landerOff.png"
+    document.getElementById("nau").src = "img/"+nave+"Off.png"
     document.getElementById("fondo-ind-bot-fil").style.height = gasfil + "%";
     stop();
     start();
@@ -339,7 +360,7 @@ function moverNave() {
             document.getElementById("lose").style.display = "none";
             document.getElementById("win").style.display = "block";
         } else {
-            document.getElementById("nau").src = "img/landerDestroyed.png"
+            document.getElementById("nau").src = "img/"+nave+"Destroyed.png"
             gameover = true;
             stop();
             document.getElementsByClassName("gameov")[0].style.display = "block";
@@ -374,7 +395,7 @@ function actualizarFuel() {
         gasfil = c;
         if (c <= 0) {
             c = 0;
-            document.getElementById("nau").src = "img/landerOff.png";
+            document.getElementById("nau").src = "img/"+nave+"Off.png";
             motorOff();
         }
         document.getElementById("fondo-ind-bot-fil").style.height = gasfil + "%";
